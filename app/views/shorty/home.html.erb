@@ -1,0 +1,8 @@
+<h1>Shorty.url</h1>
+
+
+<%= form_tag("/", method: "post") do %>
+  <%= label_tag(:long_url, "Enter the URL to be Shorty'd here:") %><br>
+  <%= text_field_tag(:long_url) %>
+  <%= submit_tag("Shorty") %>
+<% end %>
