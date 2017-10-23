@@ -3,6 +3,9 @@ class ShortyController < ApplicationController
   end
 
   def create
+    @link = Link.new
+    @link.long_url = params[:long_url]
+    @link.save
   end
 
   def redirect
